@@ -5,4 +5,4 @@ def test_home():
     client = app.test_client()
     response = client.get('/')
     assert response.status_code == 200
-    assert b"We are LIVE on Render!" in response.data
+    assert b"massive success! V2" in response.data
